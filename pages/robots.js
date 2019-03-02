@@ -6,21 +6,21 @@ const Robots = (props) => {
     <div>
       <h1>Robots</h1>
       <Link href="/">
+        <button>Home</button>
+      </Link>
         <div>
         {
-          props.robots.map(robots => (
-            <li key={robots.id}>
-              {robots.name}
+          props.robots.map(robot => (
+            <li key={robot.id}>
+              <Link href={`robots/${robot.id}`}></Link>
+              <a>{robot.name}</a>
             </li>
           ))
         }
         </div>
-      </Link>
     </div>
   );
 };
-
-
 
 export default Robots;
 

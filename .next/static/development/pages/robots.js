@@ -9949,22 +9949,41 @@ var Robots = function Robots(props) {
       lineNumber: 8
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, props.robots.map(function (robots) {
+  }, "Home")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, props.robots.map(function (robot) {
     return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
-      key: robots.id,
+      key: robot.id,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 14
       },
       __self: this
-    }, robots.name);
-  }))));
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      href: "robots/".concat(robot.id),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, robot.name));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Robots);
@@ -10002,7 +10021,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!****************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Frobots&absolutePagePath=%2FUsers%2Fderek%2Fgit%2Fnext-ssr%2Fpages%2Frobots.js ***!
   \****************************************************************************************************************************/
@@ -10025,5 +10044,5 @@ module.exports = dll_4d62ad301d4c9a40eec7;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=robots.js.map
